@@ -1,0 +1,44 @@
+[2-9 recap 1]
+
+
+
+1. 변수에 들어가는 데이터 타입
+(변수에 저장 가능한 것들)
+1) 스트링 : "로 시작해서 "로 끝나는!
+2) 숫자
+3) Boolean : true or false
+4) null : '비어 있다'를 표시하고 싶을 때 사용하는 것. nothing is something. nothingness!
+5) undefined : 변수에 값을 부여하지 않은 상태. 모든 프로그래밍 언어에 undefined가 있는 건 아니다.
+
+2. variable 저장하는 두 개의 옵션
+const, let (업데이트 가능 유무에 따라 달라짐)
+constant는 값을 업데이트하지 못하게 한다.
+
+규칙 : 항상 const를 사용하되, 가끔 let을 사용한다.
+var은 오래된 자바스크립트. 사용하지 않는다.
+
+
+3. 데이터를 정리하는 법 
+(하나의 variable 안에 많은 수의 데이터를 가지고 싶을 때)
+
+3-1. Array (배열)
+리스트를 만들고 싶을 때 사용
+대괄호 이용
+
+const days = [1, 2, false, null, undefined, "text"];
+모든 데이터타입이 들어갈 수 있다.
+우리가 원하는 모든 걸 넣을 수 있다.
+
+const toBuy = ["potato", "tomato", "pizza"];
+원하는 값을 받아보는 법
+
+toBuy [2]
+console.log(toBuy[2]);
+
+아이템 업데이트 하기
+toBuy[2] = "water";
+=을 이용해 다시 정의해주기.  2번 인덱스값 설정하기.
+**컴퓨터는 인덱스값 매길때 0번부터 매긴다.
+
+Array에 값 추가하기
+toBuy.push("meat");

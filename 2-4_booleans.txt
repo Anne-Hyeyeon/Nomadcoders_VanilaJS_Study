@@ -1,0 +1,20 @@
+[2-4 Boolean]
+
+ture : 켜져 있음
+false : 꺼져 있음
+null = 그 변수에 아무것도 없음. nothing. 값을 '아무것도 없음'으로 채우는 것. 절대로 자연스럽게 나타나지 않는다. null은 우리가 variable안에 아무 것도 없다는 걸 나타내기 위해 (명시하기 위해) 사용한다. 
+null은 '비어있어요'를 명시적으로 나타냄.
+undefined = 정의되지 않음. (변수가 정의되지 않았을 때)  
+컴퓨터 공간은 있는데, 값이 들어가지 않음.
+variable은 존재하지만, 정의가 되지 않았음.
+
+
+ex) undefined 예시
+let something;
+
+consle.log(something); -> undefined
+
+*댓글*
+undefined : 박스만 만들어 놓은 상태
+nyull : 박스 만들고 아무것도 안넣고 포장함
+

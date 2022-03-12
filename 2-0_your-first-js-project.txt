@@ -1,4 +1,4 @@
-[Your first js project- How to bring js with html]
+[2-0 Your first js project- How to bring js with html]
 콘솔을 가지고 놀아보자.
 alert("hi") : 브라우저에 hi라는 알람 띄우기
 1+1 : 2 출력

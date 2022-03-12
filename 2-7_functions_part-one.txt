@@ -1,0 +1,17 @@
+[2-7 functions P.1]
+
+function : 계속 반복해서 사용할 수 있는 코드 조각
+-> 코드를 '캡슐화'해서, 여러 번 실행할 수 있게 해준다.
+
+
+function의 기본 구조
+function sayHello(){
+    
+}
+
+function 만드는 법 : 맨 먼저 function을 적는다 ㅋㅋ
+function 뒤에는 ()가 필요하다.
+{}안에 작성되는 것이, sayHello를 실행할 때마다 실행된다.
+
+도대체 ()가 뭘까? 괄호 두 개는 function을 실행하는 방법이다.
+argument(인수) : function을 실행하는 동안 어떠한 정보를 function에게 보낼 수 있는 방법

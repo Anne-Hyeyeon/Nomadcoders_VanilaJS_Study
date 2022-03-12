@@ -1,0 +1,38 @@
+[2-6 Objects]
+데이터 정리법 2
+property를 가진 데이터를 정리하게 도와준다.
+
+게임을 만들고 있다고 상상해보자.
+게임 안 플레이어를 만들다면?
+
+*Array를 이용해보자.
+const player = ["nico", 1212, false, "little bit"];
+-> array가 좋지 않은 이유 : 1212나 little bit이 무엇을 뜻하는지 알려주지 않는다.
+
+*Objoct를 이용해보자.
+중괄호가 포인트, 중괄호 알에 특성 입력
+중괄호 안에서 =를 사용하지 않는다.
+:를 사용함
+property 끼리는 ,로 구분
+const player = {
+    name:"nico",
+    points: 10,
+    fat: true,
+};
+
+console.log(player);
+console.log(player.name);
+player.name
+
+결국 console.log도
+console 안에 있는 log를 불러오는 것
+
+헷갈리지 말 것!
+const는 변하지 않는 변수
+but object나 array 같이 콘텐츠를 바꾸는 건 가능하다.
+변수 그 자체를 바꾸려고 할 때 오류가 생긴다.
+
+object 업데이트 할 땐 =를 써서 정의해주면 된다.
+ex)
+player.points = 15;
+없는 속성도  =로 넣어줄 수 있다. 어떤 property도 만들 수 있다.

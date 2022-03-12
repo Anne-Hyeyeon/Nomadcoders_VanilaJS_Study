@@ -1,0 +1,50 @@
+[2-3 Const and Let]
+
+- 자바스크립트에서 변수명 만드는 방법 : 2가지 
+1) Const : constant(상수)라는 뜻이며, 값은 바뀔 수 없다. 
+2) Let : 새로운 것을 생성할 때 사용하는 것. (생성)
+let을 처음에 썼다면, 다음에는 사용할 필요가 없다. 
+
+ex) let myName="nico"
+cosole.log("hello " + myName);
+
+myName="nicolas"
+consle.log("your new name is + myName);
+
+여기서 첫 번째 결과값은
+hello nico
+두 번째 결과값을
+your new name is nicolas
+
+but 여기서 let 대신 constant를 적으면? 에러가 난다.
+const로 variable을 만들었다면, 절대로 값을 업데이트 할 수 없다.
+가끔씩, 몇 variable은 절대로 변하지 않도록 해야 한다.
+반대로, 어떤 variable은 변해야 한다. 
+각 기능별로 맞는 변수명 적어주면 됨.
+
+ex)
+const a = 5;
+const b = 2;
+let myName = "nico";
+
+이 코드를 봤을 때, 절대로 변하지 않을 a b와
+나중에 바뀔 수 있는 myName이 있다는 사실을 알 수 있다.
+-> 코드를 작성한 의도를 유추할 수 있다.
+
+많은 사람들이 const를 기본값으로 쓰고, variable을 업데이하고 싶을 때만 let을 쓴다.
+대부분 변수를 const로 만들고, 때에 따라 let을 사용할 가능성이 크다.
+이것들은 현대화된 버전이다!!
+
+원래는 var을 사용했다여!
+var의 경우 언제든 업데이트를 할 수 있었다.
+but var의 경우, 언어를 통한 보호를 받을 수 없다.
+실수로 a의 값을 업데이트 해도, 오류를 잡아낼 수 없다. 
+우리가 바보같은 짓을 못하게 막아준다.
+그래서 업데이트 가능 여부를 나눌 수 있는 const와 let이 생긴 것이다!
+
+but, 브라우저는 여전히 var을 이해한다. 그러나 var을 사용하면 밑에서 코드가 업데이트될지, 그렇지 않을지를 알 수 없을 것이다.
+
+Always const,
+Sometimes let,
+Never var ^ㅇ^/
+

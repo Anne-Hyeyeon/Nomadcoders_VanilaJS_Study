@@ -1,0 +1,40 @@
+[2-8 functions P.2]
+
+데이터를 function에 보내는 방법에 주목하랏!
+
+
+function sayHello(nameOfPerson) {
+    console.log(nameOfPerson);
+}
+
+sayHello("nico")
+sayHello("dal")
+sayHello("lynn")
+
+첫 번째 argument로 어떤 데이터가 들어오면, nameOfPerson이라는 variable을 쓰게 된다.
+
+
+argument는 하나 더 받을 수 있다. 
+ex)
+
+function sayHello(nameOfPerson, age) {
+    console.log(nameOfPerson);
+}
+
+sayHello("nico", 10)
+sayHello("dal", 23)
+sayHello("lynn", 21)
+
+여기서 sayHello function은 2개의 argument를 받고 있다.
+
+function sayHello(nameOfPerson, age) {
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age)
+}
+
+sayHello("nico", 10)
+sayHello("dal", 23)
+sayHello("lynn", 21)
+
+argument의 순서에 따라 데이터가 가져와진다. **순서 중요 **
+
+function의 값은 function안에서만 준비한다.

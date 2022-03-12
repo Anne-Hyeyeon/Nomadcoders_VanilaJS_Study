@@ -1,0 +1,40 @@
+[2-2 Variables]
+
+- console에게 메시지 보내는 법 :
+console.log(내용);
+콘솔에 프린트되게 하는 코드.
+
+내용에 string이나 number를 넣을 수 있다.
+console.log(2634564);
+console.log('공주님');
+
+string 사용할 때, ""도 사용 가능하지만 ''도 가능하다. 단, "로 시작하면 반드시 "로 끝내기. '로 시작하면 '로 끝내기.
+
+좋은 프로그래머가 되기 위해서는, 게을러져야 한다. 반복업무를 줄이고 심플하게 되고자 하는 마인드 장착!
+
+
+console.log(5 + 2);
+console.log(5 * 2);
+console.log(5 / 2);
+
+콘솔로 계산기 쓰기. 
+but, 숫자를 한번에 바꿔야 한다면 얼마나 번거로울까? 
+세 번씩 각각 일을 하는 게 아니라, Variable을 이용해보면 어떨까?
+
+variable의 역할 : 값을 저장하거나 유지함.
+
+variable 만들기 
+1) const 입력 (constant=상수, 바뀌지 않는 값)
+2) const 뒤 variable의 이름 주기 (ex. a)
+3) a의 값이 어떤건지 적는다.
+-> constant인 variable 만드는 과정
+
+const a = 7;
+
+console.log(a + 2);
+console.log(a * 2);
+console.log(a / 2);
+
+*variable의 이름을 어떻게 정하는가?
+- 이름에는 공백에 있을 수 없다.
+- 자바스크립트 세상에서는, 단어 띄어쓰기가 필요할 때 다음 단어의 첫 글자를 대문자로 쓴다. = Camelcase

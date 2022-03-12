@@ -1,0 +1,35 @@
+[2-5. arrays]
+
+가장 기본적인 데이터 정리법 (나열법) = 정렬
+값을 리스트로 정리하는 것
+
+const mon = "mon";
+const tue = "tue";
+const wed = "wed";
+...
+const sun = "sun";
+
+const daysOfWeek = mon + tue ... + sun
+->맞지만 어려운 방법...
+const daysofWeek = [ mon, tue, wed, thu, fri, sat, sun]
+
+const nonsense = [1,2, "hello", false, null, undefined, "nico"]
+
+- 대괄호를 사용해야 한다.
+- array 안 각각의 항목은 쉼표로 분리된다.
+- 숫자, string, boolen, null, undefine...
+
+
+*예제*
+
+const daysofWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+console.log(daysofWeek);
+
+console.log(daysofWeek[데이터 순서]);
+console.log(daysofWeek[5]);
+정렬에서 5번째 값 가져옴
+****
+
+Array.push() : 배열에 값 집어넣기
+
