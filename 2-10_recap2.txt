@@ -1,0 +1,60 @@
+[2-10 recap 2]
+
+
+1. Array대신 object를 쓰는 이유? 객체.
+연관되어 있는 property를 그룹으로 관리하기 위해서.
+console.log도 역시 property였다. 
+js는 내가 사용할 수 있는 object를 이미 가지고 있음.
+
+const name = {
+    name: "nico",
+    age: 98,
+};
+
+console.log(player.name); -> 콘솔에 nico 입력됨.
+player.name = "nicolas"하면 property값 업데이트.
+console.log(player.name); 하면 업데이트되지롱.
+
+object 안 업데이트도 가능함. 아예 새로운 값을 정의해주면 됨. 
+player.sexy = "sexy"; 
+없는 property인데 추가가 가능함.
+
+
+2. 함수
+ function plus() {
+     console.log(2 + 2);
+ }
+
+ plus(); <-라고 적으면 함수 실행됨.
+ function 안에 data를 미리 가지고 있는 것보다, 밖에서 넣어주는 게 좋음.
+ 우리는 function에 data를 보내고, function은 그걸 받을 예정!
+ function data 받는 방법 : 괄호 안에 받을 것 적기. 여기서 입력되는 글자는 placeholder에 불과하다.
+ *순서가 아주 중요하다. 순서 순서!
+
+ 많은 argument를 보내더라도, 첫 번째 argument만 받는 함수는 그것만 받을 뿐이다.
+ 길이는 상관 없음.
+
+
+
+3. 계산기 예제
+const calculator = {
+    add: function (a,b) {
+        console.log(a + b);
+    },
+    minus: function (a,b) {
+        console.log(a - b);
+    },
+    divide: function (a,b) {
+        console.log(a / b);
+    },
+    multifly: function (a,b) {
+        console.log(a * b);
+    },
+    power: function (a,b) {
+        console.log(a ** b);
+    },
+};
+
+calculator.minus(5,3);
+calculator.power(10,50);
+calculator.multifly(12,40);

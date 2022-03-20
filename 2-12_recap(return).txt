@@ -1,0 +1,58 @@
+[2-12 Recap - Return]
+
+console.log : 콘솔에 결과값을 보여주기 위한 명령
+alert : 브라우저에 결과를 보여줌
+
+but a+b, a-b 같은 실제적이 계산은 js에서 그 결과값을 바로 얻을 수 없다.
+
+만약 전 시간에 만들었던 간단 계산기 -> return하는 대신 콘솔로그 한다면?
+잘 작동하는 것처럼 보이지만, 그렇지 않다.
+
+ex) 
+const calculator = {
+    plus: function (a,b) {
+        console.log(a + b);
+    },
+};
+
+const plusResult = calcaulator.plus(5.4);
+
+이 경우 plusResult는 작동하지 않는다.
+undefined가 된다. 
+
+왜냐하면, 만약 function을 const, let, var같은 변수에할당할 경우 
+변수는 plus function(위 계산기) 의 결과 type를 가지게 된다.
+여기서 plus는 무언가를 console.log 할 뿐이고, 데이터를 주진 않는다. 
+우린 function 외부에서 결과값을 얻기를 원한다.
+
+망고 주스를 만들고 싶은데, 주스기계에서 망고주스가 안꺼내진다? 
+a+b라는 값, 데이터 그 자체가 필요하다.
+
+ex) 
+const calculator = {
+    plus: function (a,b) {
+        return a + b;
+        console.log("hello");
+    },
+};
+
+여기서 'hello'는 절대 입력되지 않는다.
+return을 하면 그걸로 끝이다. 
+
+but, 앞에 그런 명령이 있으면 실행된다.
+
+ex) 
+const calculator = {
+    plus: function (a,b) {
+        console.log("hello");
+        return a + b;
+        console.log("bye bye");
+    },
+};
+
+bye bye는 보이지 않는다.
+
+내가 원하는 건 function외부에서 value 제공받는것이기 때문에, 더이상 console.log 상요하지 않을 것.
+우리는 그 외부에서 받은 날씨값을 화면에 멋지게 출력하기 위해, return이 필요하다.
+function은 return이 있을때 한 번 돌리면 끝나고, 결과값을 준다.
+

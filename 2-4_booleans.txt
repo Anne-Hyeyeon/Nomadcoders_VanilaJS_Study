@@ -16,5 +16,5 @@ consle.log(something); -> undefined
 
 *댓글*
 undefined : 박스만 만들어 놓은 상태
-nyull : 박스 만들고 아무것도 안넣고 포장함
+null : 박스 만들고 아무것도 안넣고 포장함
 

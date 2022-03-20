@@ -9,6 +9,7 @@
 // console.log(daysofWeek);
 
 
+// 예제
 // const player = {
 //     name:"nico",
 //     points: 10,
@@ -24,7 +25,7 @@
 
 
 
-
+// 예제
 // function sayHello(nameOfPerson, age) {
 //     console.log("Hello my name is " + nameOfPerson + " and I'm " + age)
 // }
@@ -43,7 +44,7 @@
 // player object
 
 
-
+// 예제
 // const player = {
 //     name : "hy",
 //     sayHello: function(otherPersonName) {
@@ -55,6 +56,7 @@
 // player.sayHello("mj");
 
 
+// 예제
 // const bestCouple = {
 //     partnerOne : function(partnerOneName, partnerOneArea, partnerOneAge) {
 //         console.log(partnerOneName + " 님은 " + partnerOneArea + "지역에 살고있고, 나이는 " + partnerOneAge + "살 입니다.");
@@ -88,31 +90,70 @@
 //     },
 // };
 
+
+// 예제
 // favoriteFood.firstFood("고기");
 // favoriteFood.secondFood("훠궈");
 // favoriteFood.thirdFood("카레");
 
 
-const whatINeedForLove = ["사랑","인내","돈","미모","열정"];
+// const whatINeedForLove = ["사랑","인내","돈","미모","열정"];
 
-const arraytest1 = ["1","2"]
-const arraytest2 = ["3","4"]
+// const arraytest1 = ["1","2"]
+// const arraytest2 = ["3","4"]
 
-arrayResult = arraytest1.concat(arraytest2)
+// arrayResult = arraytest1.concat(arraytest2)
 
-console.log("arrayResult : " + arrayResult)
+// console.log("arrayResult : " + arrayResult)
 
-whatINeedForLove.push("노오오오력");
+// whatINeedForLove.push("노오오오력");
 
-console.log(whatINeedForLove[5]);
+// console.log(whatINeedForLove[5]);
 
-const partnerOneInfo = {
-    name : "hy",
-    age : 25,
-    hobby : "dancing",
-};
+// const partnerOneInfo = {
+//     name : "hy",
+//     age : 25,
+//     hobby : "dancing",
+// };
 
-console.log(partnerOneInfo.name);
-console.log(partnerOneInfo.age);
+// console.log(partnerOneInfo.name);
+// console.log(partnerOneInfo.age);
 
-document.write(partnerOneInfo.name);
+// document.write(partnerOneInfo.name);
+
+// // 계산기 예제
+// const calculator = {
+//     add: function (a,b) {
+//         console.log(a + b);
+//     },
+//     minus: function (a,b) {
+//         console.log(a - b);
+//     },
+//     divide: function (a,b) {
+//         console.log(a / b);
+//     },
+//     multifly: function (a,b) {
+//         console.log(a * b);
+//     },
+//     power: function (a,b) {
+//         console.log(a**b);
+//     },
+// };
+
+// calculator.minus(5,3);
+// calculator.power(10,50);
+// calculator.multifly(12,40);
+
+
+// 한국 나이 계싼하기
+const age = 96;
+function calculateKrAge(ageOfForeigner) {
+    return ageofForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log(krAge);
+
+
+
