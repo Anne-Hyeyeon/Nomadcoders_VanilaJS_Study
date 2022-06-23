@@ -1,4 +1,4 @@
-[2-12 Recap - conditionals]
+[2-13 conditionals]
 
 조건문은 true, false를 알려주기 때문에 매우 매우 중요하다.
 

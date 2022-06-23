@@ -1,0 +1,59 @@
+[2-15 conditionals part three]
+
+1) 조건이 하나보다 더 많은 경우? -> else if를 사용한다.
+ex) 18세 미만의 경우 술을 마실 수 없음!
+if(isNaN(age)){
+    console.log("Please write a number.");
+} else if (age<18) {
+    console.log("You are yoo young.");
+} else {
+    console.log("You can drink");
+}
+
+
+여기서 마지막 명령이 실행되기 위해서는 앞 두 조건이 false여야 한다.
+
+2) 두 가지 조건을 동시에 확인하는 법 -> &&
+if(isNaN(age)){
+    console.log("Please write a number.");
+} else if (age<18) {
+    console.log("You are yoo young.");
+} else if (age >= 18 && age <= 50) {
+    console.log("You can drink");
+} else {
+        console.log("You can't drink");
+}
+
+
+&&는 앞과 뒤를 모두 체크하는 AND operator(AND 연산자). 하나라도 false면 false가 뜬다.
+두 개가 모두 true여야 true가 뜬다!
+
+||는 OR operator(OR 연산자).
+둘 중 하나라도 true면 true가 뜬다.
+
+3) 사용자가 음의 숫자를 입력할 때를 알고 싶을때? -> OR 연산자 사용 ||
+
+
+if(isNaN(age) || age < 0){
+    console.log("Please write a number.");
+} else if (age<18) {
+    console.log("You are yoo young.");
+} else if (age >= 18 && age <= 50) {
+    console.log("You can drink.");
+} else if (age > 50 && age <80) {
+    console.log("You should exercise.");
+} else if (age > 80) {
+    console.log("You can do whatever you want.");
+}
+
+*연산자 정리
+true || true === true
+false || true === true
+true || false === true
+false || false === false
+
+
+true && true === true
+false && true === false
+true && false === false
+false && false === false

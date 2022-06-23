@@ -20,7 +20,7 @@ const plusResult = calcaulator.plus(5.4);
 이 경우 plusResult는 작동하지 않는다.
 undefined가 된다. 
 
-왜냐하면, 만약 function을 const, let, var같은 변수에할당할 경우 
+왜냐하면, 만약 function을 const, let, var같은 변수에 할당할 경우 
 변수는 plus function(위 계산기) 의 결과 type를 가지게 된다.
 여기서 plus는 무언가를 console.log 할 뿐이고, 데이터를 주진 않는다. 
 우린 function 외부에서 결과값을 얻기를 원한다.
