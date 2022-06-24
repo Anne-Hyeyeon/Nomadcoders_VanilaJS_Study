@@ -1,0 +1,49 @@
+[3-2 Searching For Elements]
+
+<body>
+    <h1 class="princess">Hi! This is me!</h1>
+    <h1 class="princess">Hi! This is me!</h1>
+    <h1 class="princess">Hi! This is me!</h1>
+    <h1 class="princess">Hi! This is me!</h1>
+    <h1 class="princess">Hi! This is me!</h1>
+    <script src="./app.js"></script>
+</body>
+
+바디에 이런 내용이 있을 때,
+const title = document.getElementById("title");
+
+title.innerText = "Got you!";
+를 입력하면 오류가 떤다.
+innterText 가 null 이기 때문이다.
+(id를 가진 값이 없음)
+
+
+- class를 불러오는 방법
+getElementsByClassName
+
+- tag를 불러오는 방법
+getElementByTagName
+하지만 이 경우, 결과값이 array로 나온다.
+
+- array가 아닌 h1안의 텍스트를 가져오는 방법?
+querySelector
+css selector이기 때문에 css와 동일한 방식으로 쓸 수 있다.
+
+querySelector에서는 class와 h1을 명시해 줘야 한다.
+
+querySelector는 오직 하나의 엘리먼트를
+나타내 준다.
+
+같은 class가 많아도, 태그가 많이 있어도 모든 것들을 가져오지 않고 오직 첫 번째만 가져오는 게 querySelector!
+
+- 모든 요소를 가져오는 법
+Array를 갖다주는 querySelectorAll 을 사용하면 된다. 
+selector 안의 조건에 부합하는 모든 값을 찾아줄 것이다.
+
+니꼬의 바닐라 JS 강의는 querySelector만 사용할 것이다!! 99%
+
+const title = document.querySelector("#hello")
+
+const title = document.getElementById(hello)
+
+는 같은 것이다.

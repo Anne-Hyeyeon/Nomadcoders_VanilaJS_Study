@@ -1,0 +1,17 @@
+[2-14 conditionals part two]
+
+- isNaN : NaN인지 아닌지를 판별해 주는 함수.boolean울 return한다.
+(false : NaN이 아님. 즉, number임.
+true : NaN임. 즉, number가 아님)
+
+if 문 싸용하는 법
+
+if(condition){
+    // condition === true일 때 코드
+} else {
+    // condition === false일 때 코드
+}
+
+한 가지 옵션만 적어도 된다!
+그리고 여기서 condition은 boolean이어야 한다. (true of false)!
+
