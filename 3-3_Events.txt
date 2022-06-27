@@ -1,49 +1,31 @@
-[3-2 Searching For Elements]
-
-<body>
-    <h1 class="princess">Hi! This is me!</h1>
-    <h1 class="princess">Hi! This is me!</h1>
-    <h1 class="princess">Hi! This is me!</h1>
-    <h1 class="princess">Hi! This is me!</h1>
-    <h1 class="princess">Hi! This is me!</h1>
-    <script src="./app.js"></script>
-</body>
-
-바디에 이런 내용이 있을 때,
-const title = document.getElementById("title");
-
-title.innerText = "Got you!";
-를 입력하면 오류가 떤다.
-innterText 가 null 이기 때문이다.
-(id를 가진 값이 없음)
+[3-3 Events]
 
 
-- class를 불러오는 방법
-getElementsByClassName
+- document가 존재하는 이유? html파일에서 app.js를 임포트했기 때문에!
+- 그렇게 하면 브라우저는 우리가 document에 접근할 수 있게 해준다.
 
-- tag를 불러오는 방법
-getElementByTagName
-하지만 이 경우, 결과값이 array로 나온다.
+- querySelector의 기능
+1) css 형식으로 class, id를 가져올 수 있음.
+const title = document. querySelector(".princess h1")
 
-- array가 아닌 h1안의 텍스트를 가져오는 방법?
-querySelector
-css selector이기 때문에 css와 동일한 방식으로 쓸 수 있다.
+title.innterText = "Hello"
 
-querySelector에서는 class와 h1을 명시해 줘야 한다.
+- element의 내부를 보고 싶다면, console.dir를 사용
+object로 표현한 element를 보여준다.
 
-querySelector는 오직 하나의 엘리먼트를
-나타내 준다.
+*문제 해결 : 스크립트 src 위치
 
-같은 class가 많아도, 태그가 많이 있어도 모든 것들을 가져오지 않고 오직 첫 번째만 가져오는 게 querySelector!
+- event란 ? : 클릭, 엔터, 와이파이 끊김 등... 모든 것들이 event다 (더 찾아보기)
 
-- 모든 요소를 가져오는 법
-Array를 갖다주는 querySelectorAll 을 사용하면 된다. 
-selector 안의 조건에 부합하는 모든 값을 찾아줄 것이다.
+- click event listen하기
+addEventListner
+:이벤트를 듣는 것!
 
-니꼬의 바닐라 JS 강의는 querySelector만 사용할 것이다!! 99%
+하나만 들으려면? addEventListner("click") 으로 딱 정해놓는다!
 
-const title = document.querySelector("#hello")
+handleTitleClick)
+title.addEventListener("click", handleTitleClick)
 
-const title = document.getElementById(hello)
+인수 1, 듣고 싶어하는 이벤트 이름. 이벤트를 명시해 놓는 것.
+인수 2, 실행하고자 하는 인수, ()를 빼야 함. ()는 버튼이기 때문이다. js에게 함수 이름을 넘겨주고, 대신 눌러주게 해야함.
 
-는 같은 것이다.

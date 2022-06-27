@@ -1,27 +1,55 @@
-// const title = document.getElementById("title");
 
-// console.dir(title);
+const h1 = document. querySelector(".hello h1");
 
-// title.innerText = "Got you!";
+function handleh1Click(){
+    // console.log("h1 was clicked!")
+    h1.style.color = "blue";
+}
 
-// console.log(title.id);
-// console.log(title.className)
+function handleMouseEnter(){
+    h1.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave(){
+    h1.innerText = "Mouse is gone!";
+}
+
+function handleWindowResize(){
+    document.body.style.backgroundColor = "tomato";
+}
+//여기서 body는, window내에서만 인식 가능.
+
+function handleWindowCopy(){
+    alert("copier!");
+}
+
+function handleWindowOnline(){
+    alert("ALL GOOOD!");
+}
+
+function handleWindowOffline(){
+    alert("SOS, no WIFI");
+}
 
 
-// const princess = document. getElementsByClassName("princess");
+// h1.addEventListener("click", handleh1Click);
 
+// //js에 이 function 버튼을 넘겨줘서, js가 대신 클릭 버튼을 누를 수 있게 한다.
 
-// console.log(princess);
+// // function의 실행 버튼은 이름 뒤()이다.
 
-//h1 가져오기
+// h1.addEventListener("mouseenter", handleMouseEnter);
 
-// const title = document.getElementsByTagName("h1");
+// h1.addEventListener("mouseleave", handleMouseLeave);
 
-// console.log(title);
-// //이 경우, title이 array로 나온다. 우리의 최종 목적이 아님.
+h1.onclick = handleh1Click;
+h1.onmouseenter = handleMouseEnter;
+h1.onmouseleave = handleMouseLeave
 
-// tag -> h1, div, span 등
+window.addEventListener("resize", handleWindowResize)
 
-const title = document.querySelector(".princess h1");
+window.addEventListener("copy", handleWindowCopy)
 
-console.log(title);
+window.addEventListener("online", handleWindowOnline)
+
+window.addEventListener("offline", handleWindowOffline)

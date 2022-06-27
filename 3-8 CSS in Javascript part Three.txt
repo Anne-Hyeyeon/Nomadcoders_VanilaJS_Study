@@ -1,0 +1,9 @@
+[3-8 CSS in Javascript part Three]
+
+- className을 추가하면 기존의 클래스가 사라지는 문제 해결하기 
+
+- classList를 사용한다.
+
+- 이 모든 것을 간편하게 만드는 것 -> toggle
+
+toggle은 h1의 ClassList에 active가 있는지 확인하고, 없으면 추가해주고 있으면 빼준다.

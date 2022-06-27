@@ -1,0 +1,58 @@
+[3-7 CSS in Javascript part Two]
+
+
+[3-6 CSS in Javascript]
+
+-user가 title을 click했을 때, title을 파란색으로 칠해주기 
+
+- 한번 더 누르면, title의 생각을 tomato로 바꿔준다.
+
+- 만약 h1색깔이 블루라면, 클릭할 때 tomato로 바꿔주고, blue가 아니라면 blue로 바꾸어주는 스크립트 만들기
+
+
+const h1 = document. querySelector(".hello h1");
+
+function handleh1Click(){
+    if(h1.style.color === "blue"){
+        h1.style.color = "tomato";
+    } else {
+        h1.style.color = "blue";
+    }
+
+}
+
+
+h1.addEventListener("click", handleh1Click);
+
+
+- 이걸 더 깔끔한 코드로 만들어보기.
+(현재 color 상태를 저장하는 방법!)
+
+
+const h1 = document. querySelector(".hello h1");
+
+function handleh1Click(){
+    const currentColor = h1.style.color;
+    let newColor; //empty한, 값을 바꿀 수 있는 변수 생성
+    if(currentColor === "blue"){
+        newColor = "tomato";
+    } else {
+        newColor = "blue";
+    }
+    h1.style.color = newColor;
+}
+
+
+h1.addEventListener("click", handleh1Click);
+
+- 하지만 이런 식으로, style을 js에서 바꾸어주는 건 별로 좋은 게 아니다.
+
+- style.css를 이용하자!
+
+- js로는 애니메이션 다루기
+
+
+이벤트의 3단계
+1. find the element
+2. listen the event
+3. react the event

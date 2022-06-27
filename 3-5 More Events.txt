@@ -1,0 +1,24 @@
+[3-5 More Events]
+
+window의 event내부를 살펴보고, event를 listen하는 다른 방법을 찾아보자.
+
+element내에서 일어나는 이벤트와 양상이 비슷하다.
+
+
+
+title.onclick = handleTitleClick;
+title.onmouseenter = handleMouseEnter;
+title.onmouseleave = handleMouseLeave
+
+이 방법이 있지만, addEventListener를 사용하는 걸 니꼬는 더 선호한다. 왜?
+
+removeEventListner를 이용해서 이벤트를 제거할 수 있기 때문에.
+
+window는 document가 기본적으로 제공되는것처럼, 기본적으로 제공된 것이다.
+
+document 내의 element는 body, head, title정도만 불러올 수 있고, 나머지는 querySelector이용해야 한다.
+
+copy, resize등과 같은 이벤트 탐지 가능.
+
+와이파이 연결 상태를 알 수 있는 offline, online과 같은 신기한 이벤트도 있다.
+
